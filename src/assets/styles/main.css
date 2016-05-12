@@ -1,0 +1,67 @@
+/*!
+ * Start Bootstrap
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background:#fff url(../../assets/img/body.gif) repeat-x 0 0;
+    font-family: 'Sans-Serif', serif;
+    font-size: 15px;
+    color : #848484;
+    padding-top:50px
+}
+
+.loading {
+    background: url(../../assets/img/loading.gif) center no-repeat;
+    display: block; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+
+/* Overiding Bootstrap CSS with our custom Requirements */
+
+input {
+  border-radius: 0px! important;
+}
+
+.common-btn {
+  width : 250px;
+    background-color: #1CB94E;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 14px 14px 14px 14px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.common-input {
+  width : 250px;
+  height:40px;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 2px;
+    color: #333;
+    font-size:1.4rem;
+    -webkit-transition:all 0.1s linear;
+    -moz-transition:all 0.1s linear;
+    transition:all 0.1s linear;
+    margin-bottom: 10px;
+}
+
+.common-input:focus { 
+    outline: none; 
+    border: 1px solid #7bc1f7; 
+    box-shadow: 0px 0px 8px #7bc1f7; 
+    -moz-box-shadow: 0px 0px 8px #7bc1f7; 
+    -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
+}
