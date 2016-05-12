@@ -1,5 +1,8 @@
 # angular-2-with-angular-cli
 
+This project is build using 'Angular-Cli' , you can check here for more detail ---> 
+https://cli.angular.io/
+
 # Installation
 
 1) First install globally angular-cli --->
@@ -26,3 +29,5 @@ Run unit tests, using karma.
 
 ng build ---> 
 create build folder and than deploy this on production server
+
+# Thanks to Angular-Cli
