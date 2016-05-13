@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouteParams } from '@angular/router-deprecated';
 
 @Component({
   moduleId: module.id,
@@ -9,8 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class SearchbyComponent implements OnInit {
 
  	educationType: string;
-  	constructor() {
-        this.educationType = "dummy";
+
+	constructor(params: RouteParams) {
+        this.educationType = params.get('educationType');
     }
 
   	ngOnInit() {

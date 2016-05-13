@@ -5,22 +5,22 @@ export class HomeService {
 
   	public menus: Array<any> = [{
         label: 'Searching for School',
-        href: ['searchby/school'],
+        href: ['Searchby', {educationType: 'school'}],
         img_url: '../../assets/img/school.jpg'
     },
     {
         label: 'Searching for College',
-        href: ['searchby/college'],
+        href: ['Searchby', {educationType: 'college'}],
         img_url: '../../assets/img/college.jpg'
     },
     {
         label: 'Searching for Coaching',
-        href: ['searchby/coaching'],
+        href: ['Searchby', {educationType: 'coaching'}],
         img_url: '../../assets/img/coaching.jpg'
     },
     {
         label: 'Searching for Tuition',
-        href: ['searchby/tuition'],
+        href: ['Searchby', {educationType: 'tuition'}],
         img_url: '../../assets/img/tuition.jpg'
     }];
 

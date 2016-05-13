@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './+home';
-import { Routes , ROUTER_DIRECTIVES} from '@angular/router';
+import { ROUTER_DIRECTIVES, RouterOutlet, RouteConfig} from '@angular/router-deprecated';
 import { AddEducationComponent } from './+add-education';
 import { SearchbyComponent } from './+searchby';
 import { NavbarComponent } from './navbar';
@@ -11,12 +11,12 @@ import { FooterComponent } from './footer';
   selector: 'kamlesh-app',
   templateUrl: 'kamlesh.component.html',
   styleUrls: ['kamlesh.component.css'],
-  directives: [ROUTER_DIRECTIVES,NavbarComponent,FooterComponent]
+  directives: [ROUTER_DIRECTIVES,RouterOutlet,NavbarComponent,FooterComponent]
 })
-@Routes([
-  {path: '/', component: HomeComponent},
-  {path: '/add-education', component: AddEducationComponent},
-  {path: '/searchby/:educationType', component: SearchbyComponent}
+@RouteConfig([
+  	{ path: '/', name: 'Home', component: HomeComponent, useAsDefault: true },
+    { path: '/add-education', name: 'AddEducation', component: AddEducationComponent },
+    { path: '/searchby/:educationType' , name: 'Searchby' , component: SearchbyComponent }
 ])
 export class KamleshAppComponent {
   title: string = "";

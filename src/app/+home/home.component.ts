@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ROUTER_DIRECTIVES} from '@angular/router';
+import { ROUTER_DIRECTIVES, RouterOutlet, RouteConfig} from '@angular/router-deprecated';
 import { HomeService } from './home.service';
 
 @Component({
