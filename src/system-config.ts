@@ -25,6 +25,9 @@ const barrels: string[] = [
 
   // Thirdparty barrels.
   'rxjs',
+  'bootstrap',
+  'font-awesome',
+  'jquery',
 
   // App specific barrels.
   'app',
@@ -50,6 +53,9 @@ System.config({
   map: {
     '@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
+    'bootstrap': 'vendor/bootstrap',
+    'font-awesome': 'vendor/font-awesome',
+    'jquery': 'vendor/jquery',
     'main': 'main.js'
   },
   packages: cliSystemConfigPackages
